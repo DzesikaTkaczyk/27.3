@@ -6,7 +6,7 @@ const REMOVE_COMMENT = 'REMOVE_COMMENT';
 const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
 const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 
-function addComment(text) { //kreator akcji
+function addComment(text) { //action creator
 	return {
 		type: ADD_COMMENT,
 		text,
@@ -44,6 +44,6 @@ function thunbUp(id){
 }
 
 
-dispatch(addComment('nowy komentarz!'));//wysyłka akcji z kreatorem 
-const boundAddComment = text => dispatch(addComment(text));//funkcja tworząca i i wtstłjajaca akcję aby ograniczyć powtórki przy wyowłaniach
+dispatch(addComment('nowy komentarz!'));//action displash
+const boundAddComment = text => dispatch(addComment(text));//function create and displash action-> fewer called repetitions
 boundAddComment('nowy komentarz!');
