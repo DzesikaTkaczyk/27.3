@@ -14,11 +14,11 @@ function addComment(text) { //action creator
 	}
 }
 
-function editComment(text){
+function editComment(text, id){
 	return {
 		type: EDIT_COMMENT,
 		text: text,
-		id: 20
+		id: id
 	}
 }
 
