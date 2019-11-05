@@ -18,5 +18,8 @@
   "homepage": "https://github.com/DzesikaTkaczyk/27.3#readme",
   "dependencies": {
     "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2"
   }
 }
